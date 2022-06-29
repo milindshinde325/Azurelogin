@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.Azure.Utility.AzureListner"/>
+    <listener class-name="com.Azure.Utility.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Azure.TestLayer.ValidLogin">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="testValidLgin"/>
+          <include name="setup"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.Azure.TestLayer.ValidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
